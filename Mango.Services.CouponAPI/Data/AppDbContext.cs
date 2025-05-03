@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Mango.Services.CouponAPI.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mango.Services.CouponAPI.Data
 {
@@ -17,7 +18,5 @@ namespace Mango.Services.CouponAPI.Data
             modelBuilder.Entity<Coupon>().Property(c => c.MinAmount).IsRequired();
             modelBuilder.Entity<Coupon>().Property(c => c.LastUpdated).IsRequired();
         }
-    }
-    {
-    }
+    }    
 }
